@@ -14,25 +14,26 @@
 
 <body>
 
-    <div class="container-fluid">
-        <!-- Content here -->
-        <header>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </header>
-        <main>
+
+    <!-- Content here -->
+    <header>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="container-fluid">
             <div class="row flex-row flex-nowrap">
                 <div class="col-3">
                     <div class="card">
@@ -95,15 +96,21 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+        var i=0;
+        $(document).scroll(function () {
+            console.log('test', ++i);
+        });
+    </script>
 </body>
 
 </html>
